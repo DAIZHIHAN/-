@@ -1,0 +1,194 @@
+﻿{
+  "Building_name": "IESS",
+  "Timestamp": "1234567890",
+  "Notification_Email": {
+    "Troy": "gwchen@itri.org.tw",
+    "Zak": "zak.qiu@iess.com.tw"
+  },
+  "Setting": {
+    "40001": {
+      "Name": "大廳空調",
+      "Location": "大廳",
+      "Company": "Daikin",
+      "Temp_return": "25",
+      "Temp_control": "25",
+      "Power": "OFF",
+      "Suspend": "False",
+      "Mode": "Coordinating",
+      "Meter_AC": "50001",
+      "Meter_SC": "50002",
+      "Error_code": "50002",
+      "Schedule": {
+        "Normal": "Type1",
+        "Holiday": "Type2",
+        "Special": "Type3"
+      },
+      "Date": {
+        "Holiday": [
+          "2020-03-14",
+          "2020-03-15",
+          "2020-03-21",
+          "2020-03-22",
+          "2020-03-28",
+          "2020-03-29",
+          "2020-04-04",
+          "2020-04-05"
+        ],
+        "Special": [
+          "2020-04-02",
+          "2020-04-03"
+        ]
+      }
+    },
+    "40002": {
+      "Name": "客席區空調",
+      "Location": "客席區",
+      "Company": "Hitachi",
+      "Temp_return": "25",
+      "Temp_control": "25",
+      "Power": "ON",
+      "Suspend": "False",
+      "Mode": "Coordinating",
+      "Meter_AC": "55000",
+      "Meter_SC": "58002",
+      "Error_code": "50002",
+      "Schedule": {
+        "Normal": "Type1",
+        "Holiday": "Type2",
+        "Special": "Type3"
+      },
+      "Date": {
+        "Holiday": [
+          "2020-03-14",
+          "2020-03-15",
+          "2020-03-21",
+          "2020-03-22",
+          "2020-03-28",
+          "2020-03-29",
+          "2020-04-04",
+          "2020-04-05"
+        ],
+        "Special": [
+          "2020-04-02",
+          "2020-04-03"
+        ]
+      }
+    }
+  },
+  "Schedule_list": {
+    "Type1": [
+      "Off",
+      "Off",
+      "Off",
+      "Off",
+      "Off",
+      "Off",
+      "Off",
+      "Off",
+      "Comfort",
+      "Comfort",
+      "Comfort",
+      "Comfort",
+      "Comfort",
+      "Comfort",
+      "Comfort",
+      "Comfort",
+      "Comfort",
+      "Off",
+      "Off",
+      "Off",
+      "Off",
+      "Off",
+      "Off",
+      "Off"
+    ],
+    "Type2": [
+      "Off",
+      "Off",
+      "Off",
+      "Off",
+      "Off",
+      "Off",
+      "Off",
+      "Off",
+      "Coordinating",
+      "Coordinating",
+      "Coordinating",
+      "Coordinating",
+      "Coordinating",
+      "Coordinating",
+      "Coordinating",
+      "Coordinating",
+      "Coordinating",
+      "Off",
+      "Off",
+      "Off",
+      "Off",
+      "Off",
+      "Off",
+      "Off"
+    ],
+    "Type3": [
+      "Off",
+      "Off",
+      "Off",
+      "Off",
+      "Off",
+      "Off",
+      "Off",
+      "Off",
+      "Coordinating",
+      "Coordinating",
+      "Coordinating",
+      "Coordinating",
+      "Coordinating",
+      "Coordinating",
+      "Coordinating",
+      "Coordinating",
+      "Coordinating",
+      "Off",
+      "Off",
+      "Off",
+      "Off",
+      "Off",
+      "Off",
+      "Off"
+    ],
+    "Validation": [
+      "Coordinating",
+      "Coordinating",
+      "Coordinating",
+      "Coordinating",
+      "Coordinating",
+      "Coordinating",
+      "Coordinating",
+      "Coordinating",
+      "Coordinating",
+      "Coordinating",
+      "Coordinating",
+      "Coordinating",
+      "25",
+      "25",
+      "25",
+      "25",
+      "25",
+      "25",
+      "25",
+      "25",
+      "25",
+      "25",
+      "25",
+      "25"
+    ]
+  },
+  "Algo_setting": {
+    "Comfort": {
+      "Temp_lower": "24",
+      "Temp_upper": "26"
+    },
+    "Coordinating": {
+      "Temp_lower": "20",
+      "Temp_upper": "26"
+    }
+  }
+}
